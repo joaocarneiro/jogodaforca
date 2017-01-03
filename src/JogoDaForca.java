@@ -71,12 +71,10 @@ public class JogoDaForca {
                             System.out.println("\n\n Voce acertou , a palara é :  '" + palavra + "'.");
                             tentativas = false;
                         } else {//numero de tentaivas para cada erro
-                            if (erro == 0) {
-                            } else if (erro == 1) {
-
-                            } else if (erro == 2) {
-                            } else if (erro == 3) {
-                            }
+                            if (erro == 0) {} 
+                            else if (erro == 1) {} 
+                            else if (erro == 2) {} 
+                            else if (erro == 3) {}
                         }
                     } else {
                         System.out.println("|\n VOCÊ PERDEU ! ");
