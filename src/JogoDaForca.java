@@ -10,12 +10,12 @@ public class JogoDaForca {
             System.out.println(" * Bem vindo ao JOGO DA FORCA - Nivel 1 * ");
             // ARRAY CONTENDO AS PALAVRAS
             String array[] = {
-                "java", "sistema", "informacao", "netbeans", "while", "tecnologia", "double", "algoritimo", "programacao", "inteiro"};
+                "java", "sistema", "informacao", "netbeans", "while", "tecnologia", "double", "algoritmo", "programacao", "inteiro"};
             //string que sorteia o indice do array
             String palavra = array[(int) (Math.random() * array.length)];
             // variavel que armazena o tamanho da palavra
             int TamanhoPalavras = palavra.length();
-            System.out.println("Dica: a palavra contém " + TamanhoPalavras + " letras.");
+            System.out.println("Dica: a palavra contém " + TamanhoPalavras + " letras e está relacionada com informática.");
             System.out.println("\n\n\n");
 
             // variavel indica que o jogo esta verdadeiro ( esta valendo )
