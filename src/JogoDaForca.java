@@ -8,8 +8,8 @@ public class JogoDaForca {
         do {
             System.out.println(" * Bem vindo ao JOGO DA FORCA - Nivel 1 * ");
             // ARRAY CONTENDO AS PALAVRAS
-            String array[] = {
-                "java", "sistema", "informacao", "netbeans", "while", "tecnologia", "double", "algoritmo", "programacao", "inteiro"};
+            String array[] = {"java", "sistema", "informacao", "programacao", "html", "tecnologia", "double", "algoritimo", "programacao", "inteiro", "php",
+            		 "software", "eclipse", "site"};
             //string que sorteia o indice do array
             String palavra = array[(int) (Math.random() * array.length)];
             // variavel que armazena o tamanho da palavra
