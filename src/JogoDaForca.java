@@ -6,7 +6,6 @@ public class JogoDaForca {
 		Scanner entrada = new Scanner(System.in);
         boolean jogar = true;
         do {
-
             System.out.println(" * Bem vindo ao JOGO DA FORCA - Nivel 1 * ");
             // ARRAY CONTENDO AS PALAVRAS
             String array[] = {
