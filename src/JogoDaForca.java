@@ -96,6 +96,7 @@ public class JogoDaForca {
                 System.out.println("\n  THE END GAME   \n");
             }
         } while (jogar);
+        entrada.close();
 
     }
 }
