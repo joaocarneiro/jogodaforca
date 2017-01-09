@@ -61,6 +61,7 @@ public class JogoDaForca {
                             erro++;
                         }
                         if (palavra.equals(PalavraNova)) {
+                        	image(3);
                             System.out.println("\n\n Acertou , a palavra é :  '" + palavra + "'.");
                             tentativas = false;
                         } else {
@@ -146,7 +147,25 @@ public class JogoDaForca {
             System.out.println("         *       | *   **    * **   |**      **");
             System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
             System.out.println("          \\))lalala/.,(//lalala\\||(lalala,.((//");
-            
+		break;
+		case 3:
+			
+			System.out.println("\n$$$$$$$$$$$$$$$$$$$$$$$$$");
+			System.out.println("$$$$$'`$$$$$$$$$$$$$'`$$$");
+			System.out.println("$$$$$$  $$$$$$$$$$$  $$$$");
+			System.out.println("$$$$$$$  '$/ `/ `$' .$$$$");
+			System.out.println("$$$$$$$$. i  i  /! .$$$$$");
+			System.out.println("$$$$$$$$$.--'--'   $$$$$$");
+			System.out.println("$$^^$$$$$'        J$$$$$$");
+			System.out.println("$$$   ~\"\"   `.   .$$$$$$$");
+			System.out.println("$$$$$e,      ;  .$$$$$$$$");
+			System.out.println("$$$$$$$$$$$.'   $$$$$$$$$");
+			System.out.println("$$$$$$$$$$$$.    $$$$$$$$");
+			System.out.println("$$$$$$$$$$$$$     $$$$$$");
+			System.out.println("-------------------------");
+			System.out.println("        I LOVE YOU");
+			break;
+		
 		}
 	}
 }
