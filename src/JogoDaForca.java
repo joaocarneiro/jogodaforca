@@ -145,7 +145,7 @@ public class JogoDaForca {
             System.out.println("                 |                  ||");
             System.out.println("         *       | *   **    * **   |**      **");
             System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
-            System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
+            System.out.println("          \\))lalala/.,(//lalala\\||(lalala,.((//");
             
 		}
 	}
