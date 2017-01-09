@@ -6,6 +6,7 @@ public class JogoDaForca {
 		Scanner entrada = new Scanner(System.in);
         boolean jogar = true;
         do {
+        	System.out.println();
             System.out.println(" * GAME OF FORK* ");
             System.out.println("      |||| ");
             System.out.println("      ||||");
@@ -15,15 +16,13 @@ public class JogoDaForca {
             System.out.println("       ||");
             System.out.println("       ||");
             System.out.println("       **");
-            
-     
-       
+            System.out.println();
             
             String array[] = {"java", "sistema", "informacao", "programacao", "html", "tecnologia", "double", "algoritimo", "programacao", "inteiro", "php",
             		 "software", "eclipse", "site"};
             String palavra = array[(int) (Math.random() * array.length)];
             int TamanhoPalavras = palavra.length();
-            System.out.println("Dica: a palavra contém " + TamanhoPalavras + " letras e está relacionada com informática.");
+            System.out.println("Dica: a palavra contém " + TamanhoPalavras + " letras e está relacionada com Informática.");
             System.out.println("\n\n\n");
 
             boolean jogo = true;
@@ -58,97 +57,35 @@ public class JogoDaForca {
                             }
                         }
                         if (letraErrada >= TamanhoPalavras) {
-                            System.out.println("\nNao existe essa letra");
+                            System.out.println("\nNão existe essa letra");
                             erro++;
                         }
                         if (palavra.equals(PalavraNova)) {
-                            System.out.println("\n\n Acertou , a palara é :  '" + palavra + "'.");
+                            System.out.println("\n\n Acertou , a palavra é :  '" + palavra + "'.");
                             tentativas = false;
                         } else {
                             if (erro == 0) {} 
                             else if (erro == 1) {
-                            	System.out.println("Têm mais 2 vidas");
-                            	System.out.println("                            	  |  \\ \\ | |/ /");
-                            	System.out.println("                                  |  |\\ `' ' /");
-                            	System.out.println("                                  |  ;'aorta \\      / , pulmonary");
-                            	System.out.println("                                  | ;    _,   |    / / ,  arteries");
-                            	System.out.println("                         superior | |   (  `-.;_,-' '-' ,");
-                            	System.out.println("                        vena cava | `,   `-._       _,-'_");
-                            	System.out.println("                                  |,-`.    `.)    ,<_,-'_, pulmonary");
-                            	System.out.println("                                 ,'    `.   /   ,'  `;-' _,  veins");
-                            	System.out.println("                                ;        `./   /`,    \\-'");
-                            	System.out.println("                                | right   /   |  ;\\   |\\");
-                            	System.out.println("                                | atrium ;_,._|_,  `, ' \\");
-                            	System.out.println("                                |        \\    \\ `       `,");
-                            	System.out.println("                                `      __ `    \\   left  ;,");
-                            	System.out.println("                                 \\   ,'  `      \\,  ventricle");
-                            	System.out.println("                                  \\_(            ;,      ;;");
-                            	System.out.println("                                  |  \\           `;,     ;;");
-                            	System.out.println("                         inferior |  |`.          `;;,   ;'");
-                            	System.out.println("                        vena cava |  |  `-.        ;;;;,;'");
-                            	System.out.println("                                  |  |    |`-.._  ,;;;;;'");
-                            	System.out.println("                                  |  |    |   | ``';;;'  FL");
-                            	System.out.println("                                          aorta");                            	
+                            	System.out.println("Tem mais 2 vidas");
+                            	image(1);
                             	
                             } 
                             else if (erro == 2) {
-                            	System.out.println("Têm mais 1 vidas");
-                            	System.out.println("                            	  |  \\ \\ | |/ /");
-                            	System.out.println("                                  |  |\\ `' ' /");
-                            	System.out.println("                                  |  ;'aorta \\      / , pulmonary");
-                            	System.out.println("                                  | ;    _,   |    / / ,  arteries");
-                            	System.out.println("                         superior | |   (  `-.;_,-' '-' ,");
-                            	System.out.println("                        vena cava | `,   `-._       _,-'_");
-                            	System.out.println("                                  |,-`.    `.)    ,<_,-'_, pulmonary");
-                            	System.out.println("                                 ,'    `.   /   ,'  `;-' _,  veins");
-                            	System.out.println("                                ;        `./   /`,    \\-'");
-                            	System.out.println("                                | right   /   |  ;\\   |\\");
-                            	System.out.println("                                | atrium ;_,._|_,  `, ' \\");
-                            	System.out.println("                                |        \\    \\ `       `,");
-                            	System.out.println("                                `      __ `    \\   left  ;,");
-                            	System.out.println("                                 \\   ,'  `      \\,  ventricle");
-                            	System.out.println("                                  \\_(            ;,      ;;");
-                            	System.out.println("                                  |  \\           `;,     ;;");
-                            	System.out.println("                         inferior |  |`.          `;;,   ;'");
-                            	System.out.println("                        vena cava |  |  `-.        ;;;;,;'");
-                            	System.out.println("                                  |  |    |`-.._  ,;;;;;'");
-                            	System.out.println("                                  |  |    |   | ``';;;'  FL");
-                            	System.out.println("                                          aorta");              
+                            	System.out.println("Tem mais 1 vida");  
+                            	image(1);
                             } 
-                            else if (erro == 3) {}
                         }
-                    } else {
-                        System.out.println("|\n O SEU CORAÇÃO DEIXOU DE BATER ! ");
-                        System.out.println("                        _  /)");
-                        System.out.println("                        mo / )");
-                        System.out.println("                        |/)\\)");
-                        System.out.println("                         /\\_");
-                        System.out.println("                         \\__|=");
-                        System.out.println("                        (    )");
-                        System.out.println("                        __)(__");
-                        System.out.println("                  _____/      \\_____");
-                        System.out.println("                 |  _     ___   _   ||");
-                        System.out.println("                 | | \\     |   | \\  ||");
-                        System.out.println("                 | |  |    |   |  | ||");
-                        System.out.println("                 | |_/     |   |_/  ||");
-                        System.out.println("                 | | \\     |   |    ||");
-                        System.out.println("                 | |  \\    |   |    ||");
-                        System.out.println("                 | |   \\. _|_. | .  ||");
-                        System.out.println("                 |                  ||");
-                        System.out.println("                 |  xxxxxxxxxxxxxx  ||");
-                        System.out.println("                 |                  ||");
-                        System.out.println("         *       | *   **    * **   |**      **");
-                        System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
-                        System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
- 
-                        System.out.println("  A PALAVRA CORRETA É : " + palavra + "'");
+                    } 
+                    else {
+                    	image(2);
+                        System.out.println("\nA PALAVRA CORRETA É : '" + palavra + "'");
                         tentativas = false;
                     }
                 }
                 jogo = false;
             } while (jogo);
 
-            System.out.println("\nQuer jogar de novo  ? ('S' para jogar e 'N' para não jogar)?");
+            System.out.println("\nQuer jogar de novo? ('S' para sim e 'N' para não)");
 
             char jogarNovamente = entrada.next().charAt(0);
             if (jogarNovamente == 'S' || jogarNovamente == 's') {
@@ -160,4 +97,56 @@ public class JogoDaForca {
         } while (jogar);
         entrada.close();
     }
+	
+	public static void image(int id){
+		switch(id){
+		case 1: 
+			System.out.println("                  	  |  \\ \\ | |/ /");
+        	System.out.println("                        |  |\\ `' ' /");
+        	System.out.println("                        |  ;'aorta \\      / , pulmonary");
+        	System.out.println("                        | ;    _,   |    / / ,  arteries");
+        	System.out.println("               superior | |   (  `-.;_,-' '-' ,");
+        	System.out.println("              vena cava | `,   `-._       _,-'_");
+        	System.out.println("                        |,-`.    `.)    ,<_,-'_, pulmonary");
+        	System.out.println("                       ,'    `.   /   ,'  `;-' _,  veins");
+        	System.out.println("                      ;        `./   /`,    \\-'");
+        	System.out.println("                      | right   /   |  ;\\   |\\");
+        	System.out.println("                      | atrium ;_,._|_,  `, ' \\");
+        	System.out.println("                      |        \\    \\ `       `,");
+        	System.out.println("                      `      __ `    \\   left  ;,");
+        	System.out.println("                       \\   ,'  `      \\,  ventricle");
+        	System.out.println("                        \\_(            ;,      ;;");
+        	System.out.println("                        |  \\           `;,     ;;");
+        	System.out.println("               inferior |  |`.          `;;,   ;'");
+        	System.out.println("              vena cava |  |  `-.        ;;;;,;'");
+        	System.out.println("                        |  |    |`-.._  ,;;;;;'");
+        	System.out.println("                        |  |    |   | ``';;;'  FL");
+        	System.out.println("                                aorta");                            	
+        	break;
+		case 2:
+			System.out.println("\n            O SEU CORAÇÃO DEIXOU DE BATER ! ");
+            System.out.println("                        _  /)");
+            System.out.println("                        mo / )");
+            System.out.println("                        |/)\\)");
+            System.out.println("                         /\\_");
+            System.out.println("                         \\__|=");
+            System.out.println("                        (    )");
+            System.out.println("                        __)(__");
+            System.out.println("                  _____/      \\_____");
+            System.out.println("                 |  _     ___   _   ||");
+            System.out.println("                 | | \\     |   | \\  ||");
+            System.out.println("                 | |  |    |   |  | ||");
+            System.out.println("                 | |_/     |   |_/  ||");
+            System.out.println("                 | | \\     |   |    ||");
+            System.out.println("                 | |  \\    |   |    ||");
+            System.out.println("                 | |   \\. _|_. | .  ||");
+            System.out.println("                 |                  ||");
+            System.out.println("                 |  xxxxxxxxxxxxxx  ||");
+            System.out.println("                 |                  ||");
+            System.out.println("         *       | *   **    * **   |**      **");
+            System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
+            System.out.println("          \\))...../.,(//,,..,,\\||(,,.,\\,.((//");
+            
+		}
+	}
 }
